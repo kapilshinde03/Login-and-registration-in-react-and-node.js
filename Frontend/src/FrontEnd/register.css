@@ -1,0 +1,166 @@
+.signup-container {
+    background: linear-gradient(to top, #70f1e1, #202c4d);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .signup-card {
+    background: #202c4d;
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .signup-card::before {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 10px;
+    background: radial-gradient(rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0.1));
+    border-radius: 50%;
+    filter: blur(5px);
+    z-index: 1;
+  }
+  
+  h2 {
+    margin: -35px;
+    color: rgb(5, 5, 107);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    background-color: #70f1e1;
+    position: relative;
+    z-index: 2;
+    font-weight: 400;
+    border-radius: 2px;
+  }
+  
+  .signup-form {
+    margin: 150px 0 0 0;
+  }
+  
+  .wave-container {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+  }
+  
+  svg {
+    position: absolute;
+    width: 200%;
+    height: 150px;
+    top: 0px;
+    left: 0px;
+    opacity: 0.5;
+    color: #7f85998c;
+  }
+  
+  .avatar {
+    position: absolute;
+    left: 40%;
+    top: 40px;
+    opacity: 0.5;
+  }
+  
+  .avatar i {
+    font-size: 6rem;
+  }
+  
+  .signup-form .email-container,
+  .signup-form .password-container {
+    border: none;
+    background-color: gray;
+    opacity: 0.9;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .signup-form i {
+    color: white;
+    opacity: 0.8;
+    font-size: 1.2rem;
+    padding: 1px;
+  }
+  
+  .signup-form hr {
+    border: none;
+    height: 25px;
+    width: 2px;
+    background-color: white;
+    margin: 3px 5px;
+    opacity: 0.5;
+  }
+  
+  .signup-form input{
+ 
+    background: none;
+    padding: 5px 5px;
+    border: none;
+    outline: none !important;
+    height: 75%;
+    width: 100%;
+    color: white;
+    opacity: 0.8;
+  }
+  
+  .signup-form input::placeholder {
+    color: white;
+    opacity: 0.8;
+  }
+  
+  .remember {
+    color: #70f1e1;
+  }
+  
+  .remember input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #70f1e1;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .remember input[type="checkbox"] {
+    background-color: #202c4d;
+  }
+  
+  .remember input[type="checkbox"]:checked {
+    background-color: #202c4d;
+    border-color: #70f1e1;
+  }
+  
+  .remember input[type="checkbox"]:checked::after {
+    content: "✓";
+    font-size: 10px;
+    color: #70f1e1;
+    display: block;
+    text-align: center;
+    line-height: 11px;
+  }
+  
+  .forgot a {
+    text-decoration: none;
+    color: #70f1e1;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #70f1e1;
+    color: #202c4d;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.5rem;
+    border: none;
+  }
